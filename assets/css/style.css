@@ -1,0 +1,143 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f0f0f0;
+}
+
+.menu_content {
+  width: 70px;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.circle {
+  width: 300px;
+  height: 300px;
+  border: 1px solid black;
+  border-radius: 50%;
+  position: absolute;
+  cursor: pointer;
+  transition: all .5s ease-in-out;
+  background-color: rgb(38, 0, 255);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+}
+
+.circle h1 {
+  color: white;
+  padding: 10px;
+}
+
+.options {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.options .item {
+  text-align: center;
+  border-radius: 5px;
+  color: rgb(255, 255, 255);
+  padding: 10px;
+  position: absolute;
+  cursor: pointer;
+  transition: all .5s ease-in-out;
+  background-color: rgb(38, 0, 255);
+  width: 150px;
+  height: 40px;
+}
+
+.active {
+  background-color: rgb(17, 0, 255);
+  z-index: 3;
+}
+
+.active ~ .options .item {
+  z-index: 0;
+  opacity: 0.5;
+}
+
+.active ~ .options .item:hover {
+  scale: 1.1;
+  transition: scale .3s;
+  z-index: 3;
+  opacity: 1;
+}
+
+.active ~ .options .item:nth-child(1) {
+  transform: translate(-11rem, -11rem);
+}
+
+.active ~ .options .item:nth-child(2) {
+  transform: translate(0, -15.5rem);
+  transition-delay: .1s;
+}
+
+.active ~ .options .item:nth-child(3) {
+  transform: translate(11rem, -11rem);
+  transition-delay: .2s;
+}
+
+.active ~ .options .item:nth-child(4) {
+  transform: translate(15.5rem, 0rem);
+}
+
+.active ~ .options .item:nth-child(5) {
+  transform: translate(11rem, 11rem);
+  transition-delay: .1s;
+}
+
+.active ~ .options .item:nth-child(6) {
+  transform: translate(0rem, 15.5rem);
+  transition-delay: .2s;
+}
+
+.active ~ .options .item:nth-child(7) {
+  transform: translate(-11rem, 11rem);
+  transition-delay: .2s;
+}
+
+.active ~ .options .item:nth-child(8) {
+  transform: translate(-15.5rem, 0rem);
+  transition-delay: .2s;
+}
+
+.options .item .dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: rgb(235, 235, 235);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+  border-radius: 4px;
+  z-index: 1;
+  top: 40px;
+  left: 0;
+  flex-direction: column;
+}
+
+.options .item:hover .dropdown-content {
+  display: flex;
+}
+
+.options .item .dropdown-content a {
+  color: rgb(17, 0, 255);
+  padding: 10px;
+  display: block;
+  text-decoration: none;
+}
+
+.options .item .dropdown-content a:hover {
+  background-color: rgb(127, 116, 250);
+  color: #ffffff;
+}
