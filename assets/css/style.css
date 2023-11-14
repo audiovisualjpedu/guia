@@ -23,7 +23,7 @@ body {
 .circle {
   width: 300px;
   height: 300px;
-  border: 1px solid black;
+  /* border: 1px solid black; */
   border-radius: 50%;
   position: absolute;
   cursor: pointer;
@@ -48,7 +48,7 @@ body {
 
 .options .item {
   text-align: center;
-  border-radius: 5px;
+  /* border-radius: 5px; */
   color: rgb(255, 255, 255);
   padding: 10px;
   position: absolute;
@@ -60,66 +60,179 @@ body {
 }
 
 .active {
-  background-color: rgb(17, 0, 255);
+  background-color: rgb(255, 255, 255);
   z-index: 3;
 }
 
-.active ~ .options .item {
+.active h1 {
+  color: blue;
+}
+
+.active~.options .item {
   z-index: 0;
   opacity: 0.5;
 }
 
-.active ~ .options .item:hover {
+.active~.options .item:hover {
   scale: 1.1;
   transition: scale .3s;
   z-index: 3;
   opacity: 1;
 }
 
-.active ~ .options .item:nth-child(1) {
+.active~.options .item:nth-child(1) {
   transform: translate(-11rem, -11rem);
 }
 
-.active ~ .options .item:nth-child(2) {
+.active~.options .item:nth-child(2) {
   transform: translate(0, -15.5rem);
   transition-delay: .1s;
 }
 
-.active ~ .options .item:nth-child(3) {
+.active~.options .item:nth-child(3) {
   transform: translate(11rem, -11rem);
   transition-delay: .2s;
 }
 
-.active ~ .options .item:nth-child(4) {
+.active~.options .item:nth-child(4) {
   transform: translate(15.5rem, 0rem);
 }
 
-.active ~ .options .item:nth-child(5) {
+.active~.options .item:nth-child(5) {
   transform: translate(11rem, 11rem);
   transition-delay: .1s;
 }
 
-.active ~ .options .item:nth-child(6) {
+.active~.options .item:nth-child(6) {
   transform: translate(0rem, 15.5rem);
   transition-delay: .2s;
 }
 
-.active ~ .options .item:nth-child(7) {
+.active~.options .item:nth-child(7) {
   transform: translate(-11rem, 11rem);
   transition-delay: .2s;
 }
 
-.active ~ .options .item:nth-child(8) {
+.active~.options .item:nth-child(8) {
   transform: translate(-15.5rem, 0rem);
   transition-delay: .2s;
 }
+
+/* breakpoints */
+@media (min-width: 654px) and (max-width: 767px) {
+  .circle {
+    width: 250px;
+    height: 250px;
+  }
+
+  .active~.options .item:nth-child(1) {
+    transform: translate(-12rem, -9rem);
+  }
+
+  .active~.options .item:nth-child(2) {
+    transform: translate(0, -12.5rem);
+    transition-delay: .1s;
+  }
+
+  .active~.options .item:nth-child(3) {
+    transform: translate(12rem, -9rem);
+    transition-delay: .2s;
+  }
+
+  .active~.options .item:nth-child(4) {
+    transform: translate(14.5rem, 0rem);
+  }
+
+  .active~.options .item:nth-child(5) {
+    transform: translate(12rem, 9rem);
+    transition-delay: .1s;
+  }
+
+  .active~.options .item:nth-child(6) {
+    transform: translate(0rem, 13.5rem);
+    transition-delay: .2s;
+  }
+
+  .active~.options .item:nth-child(7) {
+    transform: translate(-12rem, 9rem);
+    transition-delay: .2s;
+  }
+
+  .active~.options .item:nth-child(8) {
+    transform: translate(-14.5rem, 0rem);
+    transition-delay: .2s;
+  }
+
+}
+
+@media (min-width: 545px) and (max-width: 654px) {
+
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 30px 0 30px;
+  }
+
+  .options .item {
+    width: 120px;
+    height: 35px;
+
+  }
+
+  .circle {
+    width: 200px;
+    height: 200px;
+  }
+
+  .active~.options .item:nth-child(1) {
+    transform: translate(-11.5rem, -5rem);
+  }
+
+  .active~.options .item:nth-child(2) {
+    transform: translate(0rem, -10rem);
+    transition-delay: .1s;
+  }
+
+  .active~.options .item:nth-child(3) {
+    transform: translate(11.5rem, -5rem);
+    transition-delay: .2s;
+  }
+
+  .active~.options .item:nth-child(4) {
+    transform: translate(12.5rem, 0rem);
+  }
+
+  .active~.options .item:nth-child(5) {
+    transform: translate(10.5rem, 6rem);
+    transition-delay: .1s;
+  }
+
+  .active~.options .item:nth-child(6) {
+    transform: translate(0rem, 10rem);
+    transition-delay: .2s;
+  }
+
+  .active~.options .item:nth-child(7) {
+    transform: translate(-11.5rem, 5rem);
+    transition-delay: .2s;
+  }
+
+  .active~.options .item:nth-child(8) {
+    transform: translate(-12.5rem, 0rem);
+    transition-delay: .2s;
+  }
+
+
+}
+
 
 .options .item .dropdown-content {
   display: none;
   position: absolute;
   background-color: rgb(235, 235, 235);
-  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
-  border-radius: 4px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  /* border-radius: 4px; */
   z-index: 1;
   top: 40px;
   left: 0;
