@@ -179,50 +179,52 @@ body {
 
   .options .item {
     width: 120px;
-    height: 35px;
-
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   .circle {
-    width: 200px;
-    height: 200px;
+    width: 130px;
+    height: 130px;
   }
 
   .active~.options .item:nth-child(1) {
-    transform: translate(-11.5rem, -5rem);
+    transform: translate(-7.5rem, -5rem);
   }
 
   .active~.options .item:nth-child(2) {
-    transform: translate(0rem, -10rem);
+    transform: translate(0rem, -8rem);
     transition-delay: .1s;
   }
 
   .active~.options .item:nth-child(3) {
-    transform: translate(11.5rem, -5rem);
+    transform: translate(7.5rem, -5rem);
     transition-delay: .2s;
   }
 
   .active~.options .item:nth-child(4) {
-    transform: translate(12.5rem, 0rem);
+    transform: translate(9.5rem, 0rem);
   }
 
   .active~.options .item:nth-child(5) {
-    transform: translate(10.5rem, 6rem);
+    transform: translate(7.5rem, 5rem);
     transition-delay: .1s;
   }
 
   .active~.options .item:nth-child(6) {
-    transform: translate(0rem, 10rem);
+    transform: translate(0rem, 8rem);
     transition-delay: .2s;
   }
 
   .active~.options .item:nth-child(7) {
-    transform: translate(-11.5rem, 5rem);
+    transform: translate(-7.5rem, 5rem);
     transition-delay: .2s;
   }
 
   .active~.options .item:nth-child(8) {
-    transform: translate(-12.5rem, 0rem);
+    transform: translate(-9.5rem, 0rem);
     transition-delay: .2s;
   }
 }
