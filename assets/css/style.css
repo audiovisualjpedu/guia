@@ -1,4 +1,6 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:ital@0;1&display=swap"); * {
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital@0;1&display=swap");
+
+* {
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
@@ -69,231 +71,231 @@ body {
   color: blue;
 }
 
-.active ~ .options .item {
+.active~.options .item {
   z-index: 0;
   opacity: 0.5;
 }
 
-.active ~ .options .item:hover {
+.active~.options .item:hover {
   scale: 1.1;
   transition: scale 0.3s ease 0s;
   z-index: 3;
   opacity: 1;
 }
 
-.active ~ .options .item:nth-child(1) {
+.active~.options .item:nth-child(1) {
   transform: translate(-11rem, -11rem);
 }
 
-.active ~ .options .item:nth-child(2) {
+.active~.options .item:nth-child(2) {
   transform: translate(0px, -15.5rem);
   transition-delay: 0.1s;
 }
 
-.active ~ .options .item:nth-child(3) {
+.active~.options .item:nth-child(3) {
   transform: translate(11rem, -11rem);
   transition-delay: 0.2s;
 }
 
-.active ~ .options .item:nth-child(4) {
+.active~.options .item:nth-child(4) {
   transform: translate(15.5rem, 0rem);
 }
 
-.active ~ .options .item:nth-child(5) {
+.active~.options .item:nth-child(5) {
   transform: translate(11rem, 11rem);
   transition-delay: 0.1s;
 }
 
-.active ~ .options .item:nth-child(6) {
+.active~.options .item:nth-child(6) {
   transform: translate(0rem, 15.5rem);
   transition-delay: 0.2s;
 }
 
-.active ~ .options .item:nth-child(7) {
+.active~.options .item:nth-child(7) {
   transform: translate(-11rem, 11rem);
   transition-delay: 0.2s;
 }
 
-.active ~ .options .item:nth-child(8) {
+.active~.options .item:nth-child(8) {
   transform: translate(-15.5rem, 0rem);
   transition-delay: 0.2s;
 }
 
 @media (min-width: 654px) and (max-width: 767px) {
   .circle {
-      width: 250px;
-      height: 250px;
+    width: 250px;
+    height: 250px;
   }
 
-  .active ~ .options .item:nth-child(1) {
-      transform: translate(-12rem, -9rem);
+  .active~.options .item:nth-child(1) {
+    transform: translate(-12rem, -9rem);
   }
 
-  .active ~ .options .item:nth-child(2) {
-      transform: translate(0px, -12.5rem);
-      transition-delay: 0.1s;
+  .active~.options .item:nth-child(2) {
+    transform: translate(0px, -12.5rem);
+    transition-delay: 0.1s;
   }
 
-  .active ~ .options .item:nth-child(3) {
-      transform: translate(12rem, -9rem);
-      transition-delay: 0.2s;
+  .active~.options .item:nth-child(3) {
+    transform: translate(12rem, -9rem);
+    transition-delay: 0.2s;
   }
 
-  .active ~ .options .item:nth-child(4) {
-      transform: translate(14.5rem, 0rem);
+  .active~.options .item:nth-child(4) {
+    transform: translate(14.5rem, 0rem);
   }
 
-  .active ~ .options .item:nth-child(5) {
-      transform: translate(12rem, 9rem);
-      transition-delay: 0.1s;
+  .active~.options .item:nth-child(5) {
+    transform: translate(12rem, 9rem);
+    transition-delay: 0.1s;
   }
 
-  .active ~ .options .item:nth-child(6) {
-      transform: translate(0rem, 13.5rem);
-      transition-delay: 0.2s;
+  .active~.options .item:nth-child(6) {
+    transform: translate(0rem, 13.5rem);
+    transition-delay: 0.2s;
   }
 
-  .active ~ .options .item:nth-child(7) {
-      transform: translate(-12rem, 9rem);
-      transition-delay: 0.2s;
+  .active~.options .item:nth-child(7) {
+    transform: translate(-12rem, 9rem);
+    transition-delay: 0.2s;
   }
 
-  .active ~ .options .item:nth-child(8) {
-      transform: translate(-14.5rem, 0rem);
-      transition-delay: 0.2s;
+  .active~.options .item:nth-child(8) {
+    transform: translate(-14.5rem, 0rem);
+    transition-delay: 0.2s;
   }
 }
 
 @media (min-width: 545px) and (max-width: 654px) {
   body {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      margin: 0px 30vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 30vh;
   }
 
   .options .item {
-      width: 120px;
-      height: 30px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
+    width: 120px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   .circle {
-      width: 130px;
-      height: 130px;
+    width: 130px;
+    height: 130px;
   }
 
-  .active ~ .options .item:nth-child(1) {
-      transform: translate(-7.5rem, -5rem);
+  .active~.options .item:nth-child(1) {
+    transform: translate(-7.5rem, -5rem);
   }
 
-  .active ~ .options .item:nth-child(2) {
-      transform: translate(0rem, -8rem);
-      transition-delay: 0.1s;
+  .active~.options .item:nth-child(2) {
+    transform: translate(0rem, -8rem);
+    transition-delay: 0.1s;
   }
 
-  .active ~ .options .item:nth-child(3) {
-      transform: translate(7.5rem, -5rem);
-      transition-delay: 0.2s;
+  .active~.options .item:nth-child(3) {
+    transform: translate(7.5rem, -5rem);
+    transition-delay: 0.2s;
   }
 
-  .active ~ .options .item:nth-child(4) {
-      transform: translate(9.5rem, 0rem);
+  .active~.options .item:nth-child(4) {
+    transform: translate(9.5rem, 0rem);
   }
 
-  .active ~ .options .item:nth-child(5) {
-      transform: translate(7.5rem, 5rem);
-      transition-delay: 0.1s;
+  .active~.options .item:nth-child(5) {
+    transform: translate(7.5rem, 5rem);
+    transition-delay: 0.1s;
   }
 
-  .active ~ .options .item:nth-child(6) {
-      transform: translate(0rem, 8rem);
-      transition-delay: 0.2s;
+  .active~.options .item:nth-child(6) {
+    transform: translate(0rem, 8rem);
+    transition-delay: 0.2s;
   }
 
-  .active ~ .options .item:nth-child(7) {
-      transform: translate(-7.5rem, 5rem);
-      transition-delay: 0.2s;
+  .active~.options .item:nth-child(7) {
+    transform: translate(-7.5rem, 5rem);
+    transition-delay: 0.2s;
   }
 
-  .active ~ .options .item:nth-child(8) {
-      transform: translate(-9.5rem, 0rem);
-      transition-delay: 0.2s;
+  .active~.options .item:nth-child(8) {
+    transform: translate(-9.5rem, 0rem);
+    transition-delay: 0.2s;
   }
 }
 
 @media (min-width: 320px) and (max-width: 544px) {
   body {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      /* margin: 0px 10%; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* margin: 0px 10%; */
   }
 
   .circle {
-      width: 300px;
-      height: 300px;
-      /*       transform: rotate(270deg); */
-      padding: 20px;
+    width: 300px;
+    height: 300px;
+    /*       transform: rotate(270deg); */
+    padding: 20px;
   }
 
   .options .item {
-      width: 100px;
-      height: 25px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
+    width: 100px;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
-  .options .item .dropdown-content {
-    top: 0;
+  .dropdown-content {
+    margin-top: 0;
     left: 0;
     width: 100px;
-}
+  }
 
   .active {
     width: 100px;
     height: 100px;
   }
 
-  .active ~ .options .item:nth-child(1) {
-      transform: translate(0rem, -8rem);
+  .active~.options .item:nth-child(1) {
+    transform: translate(0rem, -8rem);
   }
 
-  .active ~ .options .item:nth-child(2) {
-      transform: translate(-6rem, -4rem);
-      transition-delay: 0.1s;
+  .active~.options .item:nth-child(2) {
+    transform: translate(-5rem, -4rem);
+    transition-delay: 0.1s;
   }
 
-  .active ~ .options .item:nth-child(3) {
-      transform: translate(-8rem, 0rem);
-      transition-delay: 0.2s;
+  .active~.options .item:nth-child(3) {
+    transform: translate(-7rem, 0rem);
+    transition-delay: 0.2s;
   }
 
-  .active ~ .options .item:nth-child(4) {
-      transform: translate(6rem, -4rem);
+  .active~.options .item:nth-child(4) {
+    transform: translate(5rem, -4rem);
   }
 
-  .active ~ .options .item:nth-child(5) {
-      transform: translate(-6rem, 4rem);
-      transition-delay: 0.1s;
+  .active~.options .item:nth-child(5) {
+    transform: translate(-5rem, 4rem);
+    transition-delay: 0.1s;
   }
 
-  .active ~ .options .item:nth-child(6) {
-      transform: translate(8rem, 0rem);
-      transition-delay: 0.2s;
+  .active~.options .item:nth-child(6) {
+    transform: translate(7rem, 0rem);
+    transition-delay: 0.2s;
   }
 
-  .active ~ .options .item:nth-child(7) {
-      transform: translate(6rem, 4rem);
-      transition-delay: 0.2s;
+  .active~.options .item:nth-child(7) {
+    transform: translate(5rem, 4rem);
+    transition-delay: 0.2s;
   }
 
-  .active ~ .options .item:nth-child(8) {
-      transform: translate(0rem, 8rem);
-      transition-delay: 0.2s;
+  .active~.options .item:nth-child(8) {
+    transform: translate(0rem, 8rem);
+    transition-delay: 0.2s;
   }
 }
 
@@ -324,8 +326,10 @@ body {
   color: rgb(255, 255, 255);
 }
 
+/* Botão inicial páginas secundárias */
+
 .homebtn {
-  width: 100%;
+  /* width: 100%; */
   height: 100vh;
   position: absolute;
   transition-delay: 2s;
@@ -334,13 +338,16 @@ body {
 #floatingButton {
   position: fixed;
   bottom: 21px;
-  right: 60px;
+  /* right: 60px; */
   background-color: rgba(0, 0, 0, 0.6);
   color: rgb(255, 255, 255);
   padding: 10px;
   cursor: pointer;
   height: 36px;
-  transition: opacity 0.3s ease 0s;
+  transition: opacity 0.1s ease 0s;
+  top: 1px;
+  left: 3px;
+  font-size: 14px;
 }
 
 #floatingButton:hover {
