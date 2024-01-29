@@ -55,6 +55,7 @@ body {
   cursor: pointer;
   transition: all 0.5s ease-in-out 0s;
   background-color: rgb(145, 64, 64);
+  box-shadow: rgba(0, 0, 0, 0.5) 3px 4px 1px;
   width: 35vh;
   height: 10vh;
   display: flex;
@@ -69,10 +70,11 @@ body {
 }
 
 .active ~ .options .item:hover {
-  transform: scale(1.1);
+  scale: 1.1;
   transition: scale 0.2s ease-in-out 0s;
   z-index: 3;
   opacity: 1;
+  box-shadow: rgba(0, 0, 0, 0.2) 3px 4px 18px;
 }
 
 .active ~ .options .item:nth-child(1) {
