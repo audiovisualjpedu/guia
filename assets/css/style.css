@@ -36,7 +36,7 @@ body {
   align-items: center;
   z-index: 2;
   font-size: 35px;
-  box-shadow: 3px 0 0 rgba(0, 0, 0, 0.14)
+  box-shadow:  3px 0 0 rgba(0, 0, 0, 0.14)
 }
 
 .circle h1 {
@@ -643,10 +643,4 @@ body {
 
 #floatingButton:hover {
   opacity: 0.6;
-}
-
-.content-button {
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
