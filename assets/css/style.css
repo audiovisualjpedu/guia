@@ -36,12 +36,23 @@ body {
   align-items: center;
   z-index: 2;
   font-size: 35px;
-  box-shadow:  3px 0 0 rgba(0, 0, 0, 0.14)
+  box-shadow:  3px 0 0 rgba(0, 0, 0, 0.14);
+  -webkit-transition-duration: 200ms;
+  transition-duration: 200ms;
 }
+
+/* .circle:hover {
+  -webkit-transform: scale(1.2, 1.2) translate3d(0, 0, 0);
+  transform: scale(1.1, 1.1) translate3d(0, 0, 0);
+} */
 
 .circle h1 {
   color: white;
   padding: 10px;
+}
+
+.circle:enabled + .circle h1 {
+  font-style: italic;
 }
 
 .options {
@@ -104,7 +115,7 @@ body {
   z-index: 0;
   opacity: 0.6;
   box-shadow: 3px 3px 0 0 rgba(0, 0, 0, 0.14);
-  2px 2px 0 rgba(0, 0, 0, 0.14)
+  text-shadow: 2px 0 rgba(0, 0, 0, 0.14)
 }
 
 .active~.options .item:hover {
