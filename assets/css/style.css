@@ -1,4 +1,6 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:ital@0;1&display=swap"); * {
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital@0;1&display=swap");
+
+* {
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
@@ -64,431 +66,479 @@ body {
   border-radius: 5px;
 }
 
-.active ~ .options .item {
+.active~.options .item {
   z-index: 0;
   opacity: 0.5;
+  box-shadow: 3px 3px 0 0 rgba(0, 0, 0, 0.14);
 }
 
-.active ~ .options .item:hover {
+.active~.options .item:hover {
   scale: 1.1;
   transition: scale 0.2s ease-in-out 0s;
   z-index: 3;
   opacity: 1;
-  box-shadow: rgba(0, 0, 0, 0.2) 3px 4px 18px;
+  /* box-shadow: rgba(0, 0, 0, 0.2) 3px 4px 18px; */
 }
 
-.active ~ .options .item:nth-child(1) {
+.active~.options .item:nth-child(1) {
   transform: translate(-11rem, -11rem);
 }
 
-.active ~ .options .item:nth-child(2) {
+.active~.options .item:nth-child(2) {
   transform: translate(0px, -15.5rem);
   transition-delay: 0.1s;
 }
 
-.active ~ .options .item:nth-child(3) {
+.active~.options .item:nth-child(3) {
   transform: translate(11rem, -11rem);
   transition-delay: 0.2s;
 }
 
-.active ~ .options .item:nth-child(4) {
+.active~.options .item:nth-child(4) {
   transform: translate(15.5rem, 0rem);
 }
 
-.active ~ .options .item:nth-child(5) {
+.active~.options .item:nth-child(5) {
   transform: translate(11rem, 11rem);
   transition-delay: 0.1s;
 }
 
-.active ~ .options .item:nth-child(6) {
+.active~.options .item:nth-child(6) {
   transform: translate(0rem, 15.5rem);
   transition-delay: 0.2s;
 }
 
-.active ~ .options .item:nth-child(7) {
+.active~.options .item:nth-child(7) {
   transform: translate(-11rem, 11rem);
   transition-delay: 0.2s;
 }
 
-.active ~ .options .item:nth-child(8) {
+.active~.options .item:nth-child(8) {
   transform: translate(-15.5rem, 0rem);
   transition-delay: 0.2s;
 }
 
 @media (min-width: 1201px) {
   .circle {
-      width: 700px;
-      height: 700px;
-      font-size: 75px;
+    width: 700px;
+    height: 700px;
+    font-size: 75px;
   }
 
   .options .item {
-      width: 200px;
-      height: 65px;
+    width: 200px;
+    height: 65px;
   }
 
   .active {
-      width: 450px;
-      height: 450px;
-      font-size: 45px;
+    width: 450px;
+    height: 450px;
+    font-size: 45px;
   }
 
-  .active ~ .options .item:nth-child(1) {
-      transform: translate(-21rem, -14rem);
+  .active~.options .item:nth-child(1) {
+    transform: translate(-21rem, -14rem);
   }
 
-  .active ~ .options .item:nth-child(2) {
-      transform: translate(0px, -25.5rem);
-      transition-delay: 0.1s;
+  .active~.options .item:nth-child(2) {
+    transform: translate(0px, -25.5rem);
+    transition-delay: 0.1s;
   }
 
-  .active ~ .options .item:nth-child(3) {
-      transform: translate(21rem, -14rem);
-      transition-delay: 0.2s;
+  .active~.options .item:nth-child(3) {
+    transform: translate(21rem, -14rem);
+    transition-delay: 0.2s;
   }
 
-  .active ~ .options .item:nth-child(4) {
-      transform: translate(27.5rem, 0rem);
+  .active~.options .item:nth-child(4) {
+    transform: translate(27.5rem, 0rem);
   }
 
-  .active ~ .options .item:nth-child(5) {
-      transform: translate(21rem, 14rem);
-      transition-delay: 0.1s;
+  .active~.options .item:nth-child(5) {
+    transform: translate(21rem, 14rem);
+    transition-delay: 0.1s;
   }
 
-  .active ~ .options .item:nth-child(6) {
-      transform: translate(0rem, 25.5rem);
-      transition-delay: 0.2s;
+  .active~.options .item:nth-child(6) {
+    transform: translate(0rem, 25.5rem);
+    transition-delay: 0.2s;
   }
 
-  .active ~ .options .item:nth-child(7) {
-      transform: translate(-21rem, 14rem);
-      transition-delay: 0.2s;
+  .active~.options .item:nth-child(7) {
+    transform: translate(-21rem, 14rem);
+    transition-delay: 0.2s;
   }
 
-  .active ~ .options .item:nth-child(8) {
-      transform: translate(-27.5rem, 0rem);
-      transition-delay: 0.2s;
+  .active~.options .item:nth-child(8) {
+    transform: translate(-27.5rem, 0rem);
+    transition-delay: 0.2s;
   }
+
+  .active~.options .item:nth-child(1) .dropdown-content,
+  .active~.options .item:nth-child(2) .dropdown-content,
+  .active~.options .item:nth-child(3) .dropdown-content,
+  .active~.options .item:nth-child(4) .dropdown-content,
+  .active~.options .item:nth-child(8) .dropdown-content {
+    top: 65px !important;
+  }
+
 }
 
 @media (min-width: 993px) and (max-width: 1200px) {
   .circle {
-      width: 550px;
-      height: 550px;
-      font-size: 30px;
+    width: 550px;
+    height: 550px;
+    font-size: 30px;
   }
 
   .options .item {
-      width: 200px;
-      height: 65px;
+    width: 200px;
+    height: 65px;
   }
 
   .active {
-      width: 350px;
-      height: 350px;
-      font-size: 25px;
+    width: 350px;
+    height: 350px;
+    font-size: 25px;
   }
 
-  .active ~ .options .item:nth-child(1) {
-      transform: translate(-19rem, -14rem);
+  .active~.options .item:nth-child(1) {
+    transform: translate(-19rem, -14rem);
   }
 
-  .active ~ .options .item:nth-child(2) {
-      transform: translate(0px, -24.5rem);
-      transition-delay: 0.1s;
+  .active~.options .item:nth-child(2) {
+    transform: translate(0px, -24.5rem);
+    transition-delay: 0.1s;
   }
 
-  .active ~ .options .item:nth-child(3) {
-      transform: translate(19rem, -14rem);
-      transition-delay: 0.2s;
+  .active~.options .item:nth-child(3) {
+    transform: translate(19rem, -14rem);
+    transition-delay: 0.2s;
   }
 
-  .active ~ .options .item:nth-child(4) {
-      transform: translate(23.5rem, 0rem);
+  .active~.options .item:nth-child(4) {
+    transform: translate(23.5rem, 0rem);
   }
 
-  .active ~ .options .item:nth-child(5) {
-      transform: translate(19rem, 14rem);
-      transition-delay: 0.1s;
+  .active~.options .item:nth-child(5) {
+    transform: translate(19rem, 14rem);
+    transition-delay: 0.1s;
   }
 
-  .active ~ .options .item:nth-child(6) {
-      transform: translate(0rem, 24.5rem);
-      transition-delay: 0.2s;
+  .active~.options .item:nth-child(6) {
+    transform: translate(0rem, 24.5rem);
+    transition-delay: 0.2s;
   }
 
-  .active ~ .options .item:nth-child(7) {
-      transform: translate(-19rem, 14rem);
-      transition-delay: 0.2s;
+  .active~.options .item:nth-child(7) {
+    transform: translate(-19rem, 14rem);
+    transition-delay: 0.2s;
   }
 
-  .active ~ .options .item:nth-child(8) {
-      transform: translate(-23.5rem, 0rem);
-      transition-delay: 0.2s;
+  .active~.options .item:nth-child(8) {
+    transform: translate(-23.5rem, 0rem);
+    transition-delay: 0.2s;
+  }
+
+  .active~.options .item:nth-child(1) .dropdown-content,
+  .active~.options .item:nth-child(2) .dropdown-content,
+  .active~.options .item:nth-child(3) .dropdown-content,
+  .active~.options .item:nth-child(4) .dropdown-content,
+  .active~.options .item:nth-child(8) .dropdown-content {
+    top: 65px !important;
   }
 }
 
 @media (min-width: 768px) and (max-width: 992px) {
   .options .item {
-      width: 160px;
-      height: 55px;
+    width: 160px;
+    height: 55px;
   }
 
   .active {
-      width: 300px;
-      height: 300px;
-      font-size: 25px;
+    width: 300px;
+    height: 300px;
+    font-size: 25px;
   }
 
-  .active ~ .options .item:nth-child(1) {
-      transform: translate(-14rem, -9rem);
+  .active~.options .item:nth-child(1) {
+    transform: translate(-14rem, -9rem);
   }
 
-  .active ~ .options .item:nth-child(2) {
-      transform: translate(0px, -16.5rem);
-      transition-delay: 0.1s;
+  .active~.options .item:nth-child(2) {
+    transform: translate(0px, -16.5rem);
+    transition-delay: 0.1s;
   }
 
-  .active ~ .options .item:nth-child(3) {
-      transform: translate(14rem, -9rem);
-      transition-delay: 0.2s;
+  .active~.options .item:nth-child(3) {
+    transform: translate(14rem, -9rem);
+    transition-delay: 0.2s;
   }
 
-  .active ~ .options .item:nth-child(4) {
-      transform: translate(18.5rem, 0rem);
+  .active~.options .item:nth-child(4) {
+    transform: translate(18.5rem, 0rem);
   }
 
-  .active ~ .options .item:nth-child(5) {
-      transform: translate(14rem, 9rem);
-      transition-delay: 0.1s;
+  .active~.options .item:nth-child(5) {
+    transform: translate(14rem, 9rem);
+    transition-delay: 0.1s;
   }
 
-  .active ~ .options .item:nth-child(6) {
-      transform: translate(0rem, 16.5rem);
-      transition-delay: 0.2s;
+  .active~.options .item:nth-child(6) {
+    transform: translate(0rem, 16.5rem);
+    transition-delay: 0.2s;
   }
 
-  .active ~ .options .item:nth-child(7) {
-      transform: translate(-14rem, 9rem);
-      transition-delay: 0.2s;
+  .active~.options .item:nth-child(7) {
+    transform: translate(-14rem, 9rem);
+    transition-delay: 0.2s;
   }
 
-  .active ~ .options .item:nth-child(8) {
-      transform: translate(-18.5rem, 0rem);
-      transition-delay: 0.2s;
+  .active~.options .item:nth-child(8) {
+    transform: translate(-18.5rem, 0rem);
+    transition-delay: 0.2s;
   }
 
   .options .item:nth-child(5) .dropdown-content {
-      display: none;
-      position: absolute;
-      background-color: rgb(235, 235, 235);
-      box-shadow: rgba(0, 0, 0, 0.2) 0px 8px 16px;
-      z-index: 1;
-      top: -220px;
-      left: 0px;
-      border-radius: 5px;
-      flex-direction: column-reverse !important;
+    display: none;
+    position: absolute;
+    background-color: rgb(235, 235, 235);
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 8px 16px;
+    z-index: 1;
+    top: -220px;
+    left: 0px;
+    border-radius: 5px;
+    flex-direction: column-reverse !important;
   }
 }
 
 @media (min-width: 654px) and (max-width: 767px) {
   .options .item {
-      width: 130px;
-      height: 40px;
+    width: 130px;
+    height: 40px;
+  }
+
+  .options .item h1{
+    font-size: 25px;
   }
 
   .active {
-      width: 300px;
-      height: 300px;
-      font-size: 25px;
+    width: 300px;
+    height: 300px;
+    font-size: 25px;
   }
 
-  .active ~ .options .item:nth-child(1) {
-      transform: translate(-12rem, -9rem);
+  .active~.options .item:nth-child(1) {
+    transform: translate(-12rem, -9rem);
   }
 
-  .active ~ .options .item:nth-child(2) {
-      transform: translate(0px, -12.5rem);
-      transition-delay: 0.1s;
+  .active~.options .item:nth-child(2) {
+    transform: translate(0px, -12.5rem);
+    transition-delay: 0.1s;
   }
 
-  .active ~ .options .item:nth-child(3) {
-      transform: translate(12rem, -9rem);
-      transition-delay: 0.2s;
+  .active~.options .item:nth-child(3) {
+    transform: translate(12rem, -9rem);
+    transition-delay: 0.2s;
   }
 
-  .active ~ .options .item:nth-child(4) {
-      transform: translate(14.5rem, 0rem);
+  .active~.options .item:nth-child(4) {
+    transform: translate(14.5rem, 0rem);
   }
 
-  .active ~ .options .item:nth-child(5) {
-      transform: translate(12rem, 9rem);
-      transition-delay: 0.1s;
+  .active~.options .item:nth-child(5) {
+    transform: translate(12rem, 9rem);
+    transition-delay: 0.1s;
   }
 
-  .active ~ .options .item:nth-child(6) {
-      transform: translate(0rem, 13.5rem);
-      transition-delay: 0.2s;
+  .active~.options .item:nth-child(6) {
+    transform: translate(0rem, 13.5rem);
+    transition-delay: 0.2s;
   }
 
-  .active ~ .options .item:nth-child(7) {
-      transform: translate(-12rem, 9rem);
-      transition-delay: 0.2s;
+  .active~.options .item:nth-child(7) {
+    transform: translate(-12rem, 9rem);
+    transition-delay: 0.2s;
   }
 
-  .active ~ .options .item:nth-child(8) {
-      transform: translate(-14.5rem, 0rem);
-      transition-delay: 0.2s;
+  .active~.options .item:nth-child(8) {
+    transform: translate(-14.5rem, 0rem);
+    transition-delay: 0.2s;
   }
 
-  .active ~ .options .item:nth-child(8) .dropdown-content, .active ~ .options .item:nth-child(1) .dropdown-content, .active ~ .options .item:nth-child(1) .dropdown-content, .active ~ .options .item:nth-child(2) .dropdown-content, .active ~ .options .item:nth-child(3) .dropdown-content, .active ~ .options .item:nth-child(4) .dropdown-content {
+  .active~.options .item:nth-child(8) .dropdown-content,
+  .active~.options .item:nth-child(1) .dropdown-content,
+  .active~.options .item:nth-child(1) .dropdown-content,
+  .active~.options .item:nth-child(2) .dropdown-content,
+  .active~.options .item:nth-child(3) .dropdown-content,
+  .active~.options .item:nth-child(4) .dropdown-content {
     top: 40px;
-}
-  
+  }
+
 }
 
 @media (min-width: 576px) and (max-width: 653px) {
   body {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      margin: 0px 30vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 30vh;
   }
 
   .options .item {
-      width: 120px;
-      height: 30px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
+    width: 120px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .options .item h1{
+    font-size: 20px;
   }
 
   .circle {
-      width: 400px;
-      height: 400px;
-      font-size: 35px;
+    width: 400px;
+    height: 400px;
+    font-size: 35px;
   }
 
   .active {
-      width: 200px;
-      height: 200px;
-      font-size: 20px;
+    width: 200px;
+    height: 200px;
+    font-size: 20px;
   }
 
-  .active ~ .options .item:nth-child(1) {
-      transform: translate(-10.5rem, -6rem);
+  .active~.options .item:nth-child(1) {
+    transform: translate(-10.5rem, -6rem);
   }
 
-  .active ~ .options .item:nth-child(2) {
-      transform: translate(0rem, -11rem);
-      transition-delay: 0.1s;
+  .active~.options .item:nth-child(2) {
+    transform: translate(0rem, -11rem);
+    transition-delay: 0.1s;
   }
 
-  .active ~ .options .item:nth-child(3) {
-      transform: translate(10.5rem, -6rem);
-      transition-delay: 0.2s;
+  .active~.options .item:nth-child(3) {
+    transform: translate(10.5rem, -6rem);
+    transition-delay: 0.2s;
   }
 
-  .active ~ .options .item:nth-child(4) {
-      transform: translate(13.5rem, 0rem);
+  .active~.options .item:nth-child(4) {
+    transform: translate(13.5rem, 0rem);
   }
 
-  .active ~ .options .item:nth-child(5) {
-      transform: translate(10.5rem, 6rem);
-      transition-delay: 0.1s;
+  .active~.options .item:nth-child(5) {
+    transform: translate(10.5rem, 6rem);
+    transition-delay: 0.1s;
   }
 
-  .active ~ .options .item:nth-child(6) {
-      transform: translate(0rem, 11rem);
-      transition-delay: 0.2s;
+  .active~.options .item:nth-child(6) {
+    transform: translate(0rem, 11rem);
+    transition-delay: 0.2s;
   }
 
-  .active ~ .options .item:nth-child(7) {
-      transform: translate(-10.5rem, 6rem);
-      transition-delay: 0.2s;
+  .active~.options .item:nth-child(7) {
+    transform: translate(-10.5rem, 6rem);
+    transition-delay: 0.2s;
   }
 
-  .active ~ .options .item:nth-child(8) {
+  .active~.options .item:nth-child(8) {
     transform: translate(-13.5rem, 0rem);
     transition-delay: 0.2s;
-}
+  }
 
-  .active ~ .options .item:nth-child(8) .dropdown-content, .active ~ .options .item:nth-child(1) .dropdown-content, .active ~ .options .item:nth-child(1) .dropdown-content, .active ~ .options .item:nth-child(2) .dropdown-content, .active ~ .options .item:nth-child(3) .dropdown-content, .active ~ .options .item:nth-child(4) .dropdown-content {
-      top: 30px;
+  .active~.options .item:nth-child(8) .dropdown-content,
+  .active~.options .item:nth-child(1) .dropdown-content,
+  .active~.options .item:nth-child(1) .dropdown-content,
+  .active~.options .item:nth-child(2) .dropdown-content,
+  .active~.options .item:nth-child(3) .dropdown-content,
+  .active~.options .item:nth-child(4) .dropdown-content {
+    top: 30px;
   }
 
 }
 
 @media (min-width: 370px) and (max-width: 575px) {
   body {
-      display: flex;
-      justify-content: center;
-      align-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   .circle {
-      width: 300px;
-      height: 300px;
-      padding: 20px;
-      font-size: 45px;
+    width: 300px;
+    height: 300px;
+    padding: 20px;
+    font-size: 45px;
   }
 
   .active {
     width: 150px;
     height: 150px;
     font-size: 20px;
-}
+  }
 
   .options .item {
-      width: 100px;
-      height: 25px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
+    width: 100px;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .options .item h1{
+    font-size: 15px;
   }
 
   .dropdown-content {
-      margin-top: 0px;
-      left: 0px;
+    top: 0px;
+    left: 0px;
   }
 
-  .active ~ .options .item:nth-child(1) {
-      transform: translate(0rem, -9rem);
+  .active~.options .item:nth-child(1) {
+    transform: translate(-7rem, -5rem);
   }
 
-  .active ~ .options .item:nth-child(2) {
-      transform: translate(-7rem, -5rem);
-      transition-delay: 0.1s;
+  .active~.options .item:nth-child(2) {
+    transform: translate(0rem, -9rem);
+    transition-delay: 0.1s;
   }
 
-  .active ~ .options .item:nth-child(3) {
-      transform: translate(-8.5rem, 0rem);
-      transition-delay: 0.2s;
+  .active~.options .item:nth-child(3) {
+    transform: translate(7rem, -5rem);
+    transition-delay: 0.2s;
   }
 
-  .active ~ .options .item:nth-child(4) {
-      transform: translate(7rem, -5rem);
+  .active~.options .item:nth-child(4) {
+    transform: translate(8.5rem, 0rem);
   }
 
-  .active ~ .options .item:nth-child(5) {
-      transform: translate(-7rem, 5rem);
-      transition-delay: 0.1s;
+  .active~.options .item:nth-child(5) {
+    transform: translate(7rem, 5rem);
+    transition-delay: 0.1s;
   }
 
-  .active ~ .options .item:nth-child(6) {
-      transform: translate(8.5rem, 0rem);
-      transition-delay: 0.2s;
+  .active~.options .item:nth-child(6) {
+    transform: translate(0rem, 9rem);
+    transition-delay: 0.2s;
   }
 
-  .active ~ .options .item:nth-child(7) {
-      transform: translate(7rem, 5rem);
-      transition-delay: 0.2s;
+  .active~.options .item:nth-child(7) {
+    transform: translate(-7rem, 5rem);
+    transition-delay: 0.2s;
   }
 
-  .active ~ .options .item:nth-child(8) {
-      transform: translate(0rem, 9rem);
-      transition-delay: 0.2s;
+  .active~.options .item:nth-child(8) {
+    transform: translate(-8.5rem, 0rem);
+    transition-delay: 0.2s;
+  }
+
+  .active~.options .item:nth-child(1) .dropdown-content,
+  .active~.options .item:nth-child(2) .dropdown-content,
+  .active~.options .item:nth-child(3) .dropdown-content,
+  .active~.options .item:nth-child(4) .dropdown-content,
+  .active~.options .item:nth-child(8) .dropdown-content {
+    top: 26px !important;
   }
 }
 
@@ -496,15 +546,16 @@ body {
   display: none;
   position: absolute;
   background-color: rgb(235, 235, 235);
-  box-shadow: rgba(0, 0, 0, 0.2) 0px 8px 16px;
+  /* box-shadow: rgba(0, 0, 0, 0.2) 0px 8px 16px; */
   z-index: 1;
-  top: 65px;
+  top: 56px;
   left: 0px;
   border-radius: 5px;
   flex-direction: column;
+  border: 1px solid rgba(0, 0, 0, .15);
 }
 
-.options .item:nth-child(5) .dropdown-content {
+/* .options .item:nth-child(5) .dropdown-content {
   display: none;
   position: absolute;
   background-color: rgb(235, 235, 235);
@@ -514,31 +565,33 @@ body {
   left: 0px;
   border-radius: 5px;
   flex-direction: column-reverse;
-}
+} */
 
-.options .item:nth-child(6) .dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: rgb(235, 235, 235);
-  box-shadow: rgba(0, 0, 0, 0.2) 0px 8px 16px;
-  z-index: 1;
-  top: -220px;
-  left: 0px;
-  border-radius: 5px;
-  flex-direction: column-reverse;
-}
-
+.options .item:nth-child(5) .dropdown-content,
+.options .item:nth-child(6) .dropdown-content,
 .options .item:nth-child(7) .dropdown-content {
   display: none;
   position: absolute;
   background-color: rgb(235, 235, 235);
   box-shadow: rgba(0, 0, 0, 0.2) 0px 8px 16px;
   z-index: 1;
-  top: -220px;
+  top: -222px;
   left: 0px;
   border-radius: 5px;
   flex-direction: column-reverse;
 }
+
+/* .options .item:nth-child(7) .dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: rgb(235, 235, 235);
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 8px 16px;
+  z-index: 1;
+  top: -222px;
+  left: 0px;
+  border-radius: 5px;
+  flex-direction: column-reverse;
+} */
 
 .options .item:hover .dropdown-content {
   display: flex;
